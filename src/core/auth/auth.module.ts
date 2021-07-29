@@ -17,6 +17,6 @@ import { AuthStrategy } from './auth.strategy';
     forwardRef(() => UserModule), // 处理模块间的循环依赖
   ],
   providers: [AuthService, AuthStrategy],
-  exports: [AuthService], // 导出 AuthService 供 UserModule 使用
+  exports: [AuthService], // 导出 AuthService 供 ArticleModule 使用
 })
 export class AuthModule {}
